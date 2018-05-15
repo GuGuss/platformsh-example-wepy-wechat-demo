@@ -1,0 +1,26 @@
+name: node
+type: nodejs:6.11
+
+hooks:
+  build: |
+    npm install wepy-cli -g
+    npm install
+    wepy build --output web
+
+web:
+  commands:
+    start: "sleep 60"
+  locations:
+    "/":
+      passthru: false
+      root: "web"
+      # Whether to allow files not matching a rule or not.
+      allow: true
+      index:
+        - index.html
+
+mounts:
+  "/run": "shared:files/run"
+
+disk: 512
+

@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
 	"appid": "touristappid",
-	"projectname": "wepy-wechat-demo",
+	"projectname": "platformsh-example-wepy-wechat-demo",
 	"miniprogramRoot": "./dist",
 	"condition": {
 		"search": {
@@ -30,8 +30,7 @@
 		},
 		"miniprogram": {
 			"current": 0,
-			"list": [
-			]
+			"list": []
 		}
 	}
 }
